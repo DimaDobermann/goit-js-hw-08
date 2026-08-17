@@ -4,18 +4,19 @@
 
 body {
   margin: 0;
-  padding: 24px;
+  padding: 16px;
+  background-color: #fff;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 8px;
+  width: 100%;
   max-width: 1128px;
   margin: 0 auto;
-  padding: 0;
+  padding: 16px;
   list-style: none;
 }
 
@@ -25,7 +26,8 @@ body {
 
 .gallery-link {
   display: block;
-  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
 }
 
 .gallery-image {
@@ -37,5 +39,12 @@ body {
 }
 
 .gallery-image:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+}
+
+.basicLightbox__placeholder img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
 }
